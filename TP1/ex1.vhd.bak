@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+entity exerc1 is 
+port(a,b:in std_logic;
+s1,s2,s3,s4,s5,s6,s7:out std_logic);
+end exerc1;
+architecture arch of exerc1 is 
+begin
+s1<= a and b;
+s1<= a or b;
+s1<= a xor b;
+s1<= a not b;
+s1<= a nand b;
+s1<= a nor b;
+s1<= a xnor b;
+end arch;
